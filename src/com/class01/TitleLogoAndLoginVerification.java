@@ -7,8 +7,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Utils.CommonMethods;
-import Utils.Constants;
+import com.utils.CommonMethods;
+import com.utils.Constants;
 
 public class TitleLogoAndLoginVerification extends CommonMethods {
 

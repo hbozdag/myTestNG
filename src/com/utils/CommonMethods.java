@@ -1,4 +1,4 @@
-package Utils;
+package com.utils;
 
 import java.util.concurrent.TimeUnit;
 
@@ -35,7 +35,7 @@ public class CommonMethods {
 		} else {
 			System.err.println("Browser not supported");
 		}
-		//driver.manage().window().maximize();
+		driver.manage().window().fullscreen();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(url);

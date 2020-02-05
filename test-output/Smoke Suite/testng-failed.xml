@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.class02.AssertionsDemo">
+        <methods>
+          <include name="titleValidation"/>
+          <include name="openAndNavigate"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.class02.AssertionsDemo -->
+      <class name="com.class02.SoftAssertionDemo">
+        <methods>
+          <include name="open"/>
+          <include name="tearDown"/>
+          <include name="logoAndLogin"/>
+        </methods>
+      </class> <!-- com.class02.SoftAssertionDemo -->
+      <class name="com.class03.DataProviderDemo">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="login" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.class03.DataProviderDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->
